@@ -38,17 +38,29 @@ print("The alien is now " + alien_0['color'] + "." )
 
 #以不同速度移动的外星人的位置进行跟踪
 print("\n确定外星人移动多远:")
-alien_0 = {'x_position':0,'y_position':25,'speed':'medium'}
-print("Original x_position：" + str(alien_0['x_position']))
+alien_0 = {'x_position':0,'y_position':25,'speed':'medium'}#建立字典
+print("Original x_position：" + str(alien_0['x_position']))#先输出原来位置
 #向右移动外星人
 #据外星人当前速度决定将其移动多远
 if alien_0['speed'] == 'slow':
-	x_increment = 1
-elif alien_0['speed'] == 'medium':
+	x_increment = 1 #移动慢就移动一个单位
+elif alien_0['speed'] == 'medium': #找移动速度中等的
 	x_increment = 2
 else:
-	x_increment = 3
+	x_increment = 3	#速度越快增量越大
 #新位置等于老位置加上增量
 alien_0['x_position'] = alien_0['x_position'] = x_increment
-print("New x_position:" + str(alien_0['x_position']))
+print("New x_position:" + str(alien_0['x_position'])) #输出新位置
+#将速度中等的外形人变成速度很快的外星人
+alien_0['speed'] = 'fast'
+print(alien_0)
+
+
+#使用del语句 删除键-值 对
+print("\n用del语句删除键-值对：")
+alien_0 = {'color':'green','points':5}
+print(alien_0)
+
+del alien_0['points']	#调用删除语句
+print(alien_0)
 
