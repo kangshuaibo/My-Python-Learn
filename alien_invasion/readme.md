@@ -51,6 +51,7 @@ conda activate snakes
  
 # 停用snakes环境并返回基础环境
 source deactivate
+conda deactivate snakes
  
 # 删除某个环境conda env remove -n 环境名称
 conda env remove -n snakes
