@@ -7,6 +7,7 @@ class Ship():
 		"""初始化飞船并设置其初始位置"""
 		self.screen = screen
 		self.ai_settings = ai_settings
+		
 		#加载飞船图像并获取其外接矩形
 		self.image = pygame.image.load('images/ship.bmp')	#返回一个飞船的surface
 		self.rect = self.image.get_rect()
