@@ -5,7 +5,7 @@ import numpy as np
  
 #创建数据集 （返回DataFrame）
 def createdata():
-    data = pd.DataFrame({'water':[1,1,1,0,0],'feet':[1,1,0,1,1],'survive':['yes','yes','no','no','no']})
+    data = pd.DataFrame({'Turnover':[1,1,1,0,0],'Reissued':[1,1,0,1,1],'Dividend':[1,1,0,1,1],'Buy':['yes','yes','no','no','no']})
     return data
  
 #计算香农熵  （DataFrame）
