@@ -128,10 +128,10 @@ def createTree(dataset,featureLabels):
         desitionTree[bestFeature][value]=createTree(subData,subFeatureLabels)
     return desitionTree
 def main():
-	watermalon=pd.read_csv(r"data.txt",sep=" ")
-	watermalon_list = np.array(watermalon).tolist()
-	features = watermalon.columns.tolist()[0:-1]
-	my_tree = createTree(watermalon_list,features)
+	data_input=pd.read_csv(r"data.txt",sep=" ")
+	data_input_list = np.array(data_input).tolist()
+	features = data_input.columns.tolist()[0:-1]
+	my_tree = createTree(data_input_list,features)
 	print (my_tree)
 
 if __name__  == "__main__":
